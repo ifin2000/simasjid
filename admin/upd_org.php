@@ -1,0 +1,22 @@
+<?php
+//ini_set('display_errors', 1);
+//ini_set('display_startup_errors', 1);
+//error_reporting(E_ALL);
+$kode = $_POST['kode'];
+$koorg = $_POST['koorg'];
+$nama = $_POST['nama'];
+$alamat = $_POST['alamat'];
+$telp = $_POST['telp'];
+$kota = $_POST['kota'];
+if ($nama==''){ 
+    ("Location: ../dashboard.php?pages=organisasi&hasil=pesangagal2");
+} else {
+    include ('../incl/koneksi.php');
+    $resukt = mysqli_query($db_link,"update organisasi set nama='$nama',kode='$koorg',alamat='$alamat',kota='$kota',telp='$telp' where id='$kode'");
+   if ($resukt) {
+        header("Location: ../dashboard.php?pages=organisasi&hasil=pesansukses2");
+    } else {
+    	 header("Location: ../dashboard.php?pages=organisasi&hasil=pesangagal1");
+    }
+}
+?> 
