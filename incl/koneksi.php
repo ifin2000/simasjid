@@ -1,7 +1,7 @@
 <?php
-$dbName = 'db_almadinah'; // nama database
-$dbUser = 'root';
-$dbPass = 'Br0w34y0w15b3n';
+$dbName = 'db_yayasan'; // nama database
+$dbUser = 'user';
+$dbPass = 'password';
 $dst = ''; //Untuk folder simpan album
 $db_link=mysqli_connect('localhost',$dbUser,$dbPass,$dbName);
 if (!$db_link){
