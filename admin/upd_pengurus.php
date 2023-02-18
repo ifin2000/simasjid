@@ -16,6 +16,9 @@ if (($nama=='') OR ($jabatan=='')){
 } else {
     include ('../incl/koneksi.php');
     $resukt = mysqli_query($db_link,"update pengurus set nama='$nama',alamat='$alamat',telp='$telp',jabatan='$jabatan',ket_jabatan='$ketjabatan',kode_jabatan='$kojab',periode='$periode',aktif='$aktif' where id='$kode'");
+    if ($aktif==0){
+        mysqli_query($db_link,"update users set akses='',tingkatan='' where id='$kode'");
+    }
     if ($resukt) {
         header("Location: ../dashboard.php?pages=datapengurus&hasil=pesansukses2");
     } else {

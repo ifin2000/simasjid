@@ -35,17 +35,17 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="col-md-6">
+                        <!--<div class="col-md-6">
                             <a href="#" class="btn btn-link btn-block">lupa password?</a>
-                        </div>
+                        </div>-->
                         <div class="col-md-6">
                             <button type="submit" class="btn btn-danger btn-block">MASUK</button>
                         </div>
                     </div>
-                    <div class="login-or">atau</div>
+                    <!--<div class="login-or">atau</div>
                     <div class="login-subtitle">
                         Belum punya account? <a href="#">Buat account baru</a>
-                    </div>
+                    </div>-->
                     </form>
                 </div>
                 <div class="login-footer">

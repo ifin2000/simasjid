@@ -1,0 +1,151 @@
+body {
+	margin: 6px;
+	color          : #000000;
+  	background-color: #ffffff;
+}
+p, div {
+  font-size        : 12px;
+  color            : #000000;
+}
+h1 {
+  font-size        : 14px;
+  font-weight      : bold;
+  color            : #000000;
+}
+h2 {
+  font-size        : 13px;
+  font-weight	   : bold;
+  color            : #000000;
+}
+
+small {
+  font-size        : 11px;
+  font-weight      : bold;
+  color            : #000000;
+}
+
+table.title {
+  background-color : #000000;
+}
+table.isi {
+  background-color : #000000;
+}
+table.ln {
+  background-color : #000000;
+}
+
+tr {
+  font-size        : 14px;
+}
+th.tg {
+  font-size        : 14px;
+  background-color : #ffffff;
+  text-align       : center;
+}
+td.isi1 {
+  font-size        : 14px;
+  background-color : #ffffff;
+  text-align       : left;
+}
+td.isi2 {
+  font-size        : 14px;
+  background-color : #ffffff;
+  text-align       : center;
+}
+td.isi3 {
+  font-size        : 14px;
+  background-color : #ffffff;
+  text-align       : right;
+}
+td.ki {
+  font-size        : 14px;
+  background-color : #ffffff;
+  text-align       : left;
+}
+td.ka {
+  font-size        : 14px;
+  background-color : #ffffff;
+  text-align       : right;
+}
+td.tg {
+  font-size        : 14px;
+  font-weight    	: bold;
+  background-color : #FFFFFF;
+  text-align       : center;
+}
+
+.subtitle {
+font-size: 13px;
+font-weight: bold;
+color : black;
+text-transform: uppercase;
+letter-spacing: 2px;
+margin-left: 20px;
+}
+
+#active_menu {
+  color: #000000;
+}
+
+a.mainmenu:link, a.mainmenu:visited {
+color: grey;
+font-weight: bold;
+font-size  : 10px;
+
+}
+a.mainmenu:hover {
+color: red;
+}
+
+.button {
+  font-style       : normal;
+  font-size        : 10px;
+  font-weight    : bold;
+  background-color : #F0F0F0;
+  color            : #FFFFFF;
+  border           : 1px solid #CCCCCC;
+}
+
+.inputbox {
+  font-size        : 10px;
+  color            : #000000;
+  background-color : #EAF4FF;
+  border           : 1px dot #EAF4FF;
+}
+.inputbot {
+  font-size        : 10px;
+  color            : white;
+  background-color : white;
+  border           : 0px solid white;
+}
+
+a:link, a:visited {
+color: #ff6600;
+text-decoration: none;
+}
+
+a:hover {
+color: red;
+text-decoration: underline;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  line-height: 15px;
+  padding-left: 10px;
+  padding-top: 0px;
+  background-image: url(../images/arrow.png) ;
+  background-repeat: no-repeat;
+  background-position: 0px 3px;
+}
+
+form {
+/* removes space below form elements */
+	margin: 5;
+ 	padding: 0;
+}

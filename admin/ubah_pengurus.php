@@ -54,6 +54,7 @@
                     <option value=<?php pilih($data["jabatan"],"Ketua Yayasan"); ?>>Ketua Yayasan</option>
                     <option value=<?php pilih($data["jabatan"],"Sekretaris Yayasan"); ?>>Sekretaris Yayasan</option>
                     <option value=<?php pilih($data["jabatan"],"Bendahara Yayasan"); ?>>Bendahara Yayasan</option>
+                    <option value=<?php pilih($data["jabatan"],"Humas Yayasan"); ?>>Humas Yayasan</option>
                     <option value=<?php pilih($data["jabatan"],"Ketua Bidang 1"); ?>>Ketua Bidang 1</option>
                     <option value=<?php pilih($data["jabatan"],"Ketua Bidang 2"); ?>>Ketua Bidang 2</option>
                     <option value=<?php pilih($data["jabatan"],"Ketua Bidang 3"); ?>>Ketua Bidang 3</option>
@@ -70,10 +71,10 @@
                     <option value=<?php pilih($data["jabatan"],"Bendahara Bidang 4"); ?>>Bendahara Bidang 4</option>
                     <option value=<?php pilih($data["jabatan"],"Bendahara Bidang 5"); ?>>Bendahara Bidang 5</option>
                     <option value=<?php pilih($data["jabatan"],"Anggota Tim Bidang 1"); ?>>Anggota Tim Bidang 1</option>
-                    <option value=<?php pilih($data["jabatan"],"Anggota Tim Bidang 1"); ?>>Anggota Tim Bidang 2</option>
-                    <option value=<?php pilih($data["jabatan"],"Anggota Tim Bidang 1"); ?>>Anggota Tim Bidang 3</option>
-                    <option value=<?php pilih($data["jabatan"],"Anggota Tim Bidang 1"); ?>>Anggota Tim Bidang 4</option>
-                    <option value=<?php pilih($data["jabatan"],"Anggota Tim Bidang 1"); ?>>Anggota Tim Bidang 5</option>
+                    <option value=<?php pilih($data["jabatan"],"Anggota Tim Bidang 2"); ?>>Anggota Tim Bidang 2</option>
+                    <option value=<?php pilih($data["jabatan"],"Anggota Tim Bidang 3"); ?>>Anggota Tim Bidang 3</option>
+                    <option value=<?php pilih($data["jabatan"],"Anggota Tim Bidang 4"); ?>>Anggota Tim Bidang 4</option>
+                    <option value=<?php pilih($data["jabatan"],"Anggota Tim Bidang 5"); ?>>Anggota Tim Bidang 5</option>
                 </select>
             </div>
           </div>
@@ -91,12 +92,13 @@
           </div>
           <div class="form-group">
               <label class="control-label text-left col-md-3">Aktif ?</label>
-              <div class="col-md-3">
+              <div class="col-md-1">
                 <select class="form-control select" name="aktif">
                     <option value=<?php pilih($data["aktif"],"1"); ?>>Aktif</option>
                     <option value=<?php pilih($data["aktif"],"0"); ?>>Tidak Aktif</option>
                 </select>
               </div>
+              <label class="control-label text-left col-md-6">[saat statusnya 'tidak aktif' maka pengurus ini hak akses ke sistem ikut dimatikan!]</label>
           </div>
           <div class="form-group">
             <label class="control-label col-md-3"></label>

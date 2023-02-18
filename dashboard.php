@@ -55,17 +55,16 @@ if (isset($_SESSION["sesi"])){
                     </div>
                     </li>
                     <li class="xn active">
-                        <a href="?pages=dashboard"><span class="fa fa-dashboard"></span> <span class="xn-text">Dashboard</span></a>
+                        <a href="?pages=home"><span class="fa fa-dashboard"></span> <span class="xn-text">Dashboard</span></a>
                     </li>                    
                     <li class="xn-openable">
                         <a href="#"><span class="fa fa-gear"></span> <span class="xn-text">Setting Umum</span></a>
                         <ul>
                             <?php if(in_array('11', $akses)){ ?><li><a href="?pages=organisasi"><span class="fa fa-building"></span> Profil Organisasi</a></li><?php } ?>
                             <?php if(in_array('12', $akses)){ ?><li><a href="?pages=datapengurus"><span class="fa fa-user"></span> Data Pengurus</a></li><?php } ?>
-                            <?php if(in_array('13', $akses)){ ?><li><a href="?pages=datauser"><span class="fa fa-sign-in"></span> Data Pengguna</a></li><?php } ?>
-                            <?php if(in_array('14', $akses)){ ?><li><a href="?pages=formsurat"><span class="fa fa-edit"></span> Format Surat</a></li><?php } ?>
-                            <?php if(in_array('15', $akses)){ ?><li><a href="?pages=setwablast"><span class="fa fa-bullhorn"></span> WhatsApp Blast</a></li><?php } ?>
-                            <?php if(in_array('16', $akses)){ ?><li><a href="?pages=datajamaah"><span class="fa fa-users"></span> Data Jamaah</a></li><?php } ?>
+                            <?php if(in_array('13', $akses)){ ?><li><a href="?pages=formsurat"><span class="fa fa-edit"></span> Format Surat</a></li><?php } ?>
+                            <?php if(in_array('14', $akses)){ ?><li><a href="?pages=setwablast"><span class="fa fa-bullhorn"></span> WhatsApp Blast</a></li><?php } ?>
+                            <?php if(in_array('15', $akses)){ ?><li><a href="?pages=datajamaah"><span class="fa fa-users"></span> Data Jamaah</a></li><?php } ?>
                         </ul>
                     </li>
                     <li class="xn-openable">
@@ -78,7 +77,7 @@ if (isset($_SESSION["sesi"])){
                         </ul>
                     </li>
                     <li class="xn-openable">
-                        <a href="#"><span class="fa fa-desktop"></span> <span class="xn-text">Data utk TV Masjid</span></a>
+                        <a href="#"><span class="fa fa-desktop"></span> <span class="xn-text">Dakwah Rutin</span></a>
                         <ul>
                             <?php if(in_array('31', $akses)){ ?><li><a href="?pages=jdwimam"><span class="fa fa-bookmark"></span> Jadwal Imam</a></li><?php } ?>
                             <?php if(in_array('32', $akses)){ ?><li><a href="?pages=dataustd"><span class="fa fa-male"></span> Data Ustadz/Khotib</a></li><?php } ?>

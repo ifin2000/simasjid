@@ -23,7 +23,7 @@ if (($nama=='') OR ($jabatan=='') OR ($user=='') OR ($passw=='')){
     $resuzt = mysqli_query($db_link,"select id from pengurus where nama='$nama'");
     $dato = mysqli_fetch_array($resuzt);
     $ide = $dato['id'];
-    $result = mysqli_query($db_link,"insert into users values('$ide','$user',md5('$passw'),'$hakakses','administrator')");
+    $result = mysqli_query($db_link,"insert into users values('$ide','$user',md5('$passw'),'$hakakses','','')");
     if ($resukt) {
         header("Location: ../dashboard.php?pages=datapengurus&hasil=pesansukses2");
     } else {

@@ -1,15 +1,15 @@
 
     <div class="page-content-wrap form-horizontal">
         <form action="keuangan/pr_inout.php" method="post" name="trans" enctype="multipart/form-data" autocomplete="off">
-        <div class="panel panel-info">
-        			<div class="panel-heading">
+            <div class="panel panel-info">
+        		<div class="panel-heading">
                   <h3 class="panel-title">Entry Pemasukan/Pengeluaran Dana</h3>
                   <ul class="panel-controls">
                       <li><a href="#" class="panel-fullscreen"><span class="fa fa-expand"></span></a></li>
                       <li><a href="#" class="panel-collapse"><span class="fa fa-angle-down"></span></a></li>
                   </ul>
-              </div>
-        </div>
+                </div>
+            </div>
         <?php
             $saat = date('ym');
             include ('../incl/koneksi.php');
@@ -69,18 +69,18 @@
             </div>
           </div>         
         </div>      
-    </div>
-    </form>
+        </form>
+    
                     
     <br>
-        <div class="panel panel-info">
-            <div class="panel-heading">
+    <div class="panel panel-info">
+        <div class="panel-heading">
                 <h4 class="panel-title">
                     <a href="#paneldana">
                         DATA PEMASUKAN/PENGELUARAN DANA
                     </a>
                 </h4>
-            </div>                                                                           
+        </div>                                                                           
         </div>
         <div class="panel-body" id="paneldana">
         <div class="form-group">
@@ -112,6 +112,7 @@
                 </div>
             </div>
         </div>
+    </div>
 
     </div>
 
@@ -135,7 +136,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+    </div>
     
     <script type="text/javascript" src="incl/js/plugins/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="incl/js/plugins/jquery/jquery-ui.min.js"></script>

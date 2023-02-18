@@ -20,10 +20,10 @@
                             <tr class="success">
                                 <th style="width:25%">Nama Lengkap</th>
 								<th style="width:15%">Jabatan</th>
-								<th style="width:25%">Keterangan</th>
+								<th style="width:20%">Keterangan</th>
 								<th style="width:15%">Periode</th>
 								<th style="width:10%">No.Telp</th>
-								<th style="width:10%">Proses</th>
+								<th style="width:150%">Proses</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -41,7 +41,7 @@
                                 <td class="text-center"><?php echo $data['telp']; ?></td>
                                 <td>
                                 <?php if($div=='administrator'){ ?>
-                                    <a href="?pages=ubahpengurus&kode=<?php echo $data['id']; ?>"><button class="btn btn-success btn-rounded btn-condensed btn-sm" data-toggle="tooltip" data-placement="left" title="Edit Pengurus"><span class="fa fa-pencil"></span></button></a> - <a href="#"><button class="btn btn-danger btn-rounded btn-condensed btn-sm mb-control" onclick="buka('<?php echo $data['id']; ?>')" id="<?php echo $data['id']; ?>" data-toggle="tooltip" data-placement="left" title="Hapus Pengurus"><span class="fa fa-times"></span></button></a>
+                                    <a href="?pages=ubahpengurus&kode=<?php echo $data['id']; ?>"><button class="btn btn-success btn-rounded btn-condensed btn-sm" data-toggle="tooltip" data-placement="left" title="Edit Pengurus"><span class="fa fa-pencil"></span></button></a> - <a href="?pages=setuser&kode=<?php echo $data['id']; ?>"><button class="btn btn-info btn-rounded btn-condensed btn-sm" data-toggle="tooltip" data-placement="left" title="Setup User"><span class="fa fa-cogs"></span></button></a> - <a href="#"><button class="btn btn-danger btn-rounded btn-condensed btn-sm mb-control" onclick="buka('<?php echo $data['id']; ?>')" id="<?php echo $data['id']; ?>" data-toggle="tooltip" data-placement="left" title="Hapus Pengurus"><span class="fa fa-times"></span></button></a>
                                 <?php } ?>
                                 </td>
 		                    </tr>

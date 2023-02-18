@@ -1,7 +1,7 @@
 
 
         <div class="page-content-wrap form-horizontal">
-        <form action="admin/new_pengurus.php" method="post" name="trans">
+        <form action="admin/new_pengurus.php" method="post" name="trans" autocomplete="off">
 
         <div class="panel panel-info">
         			<div class="panel-heading">
@@ -48,6 +48,7 @@
                     <option value="Ketua Yayasan">Ketua Yayasan</option>
                     <option value="Sekretaris Yayasan">Sekretaris Yayasan</option>
                     <option value="Bendahara Yayasan">Bendahara Yayasan</option>
+                    <option value="Humas Yayasan">Humas Yayasan</option>
                     <option value="Ketua Bidang 1">Ketua Bidang 1</option>
                     <option value="Ketua Bidang 2">Ketua Bidang 2</option>
                     <option value="Ketua Bidang 3">Ketua Bidang 3</option>
@@ -84,13 +85,14 @@
               </div>
           </div>
           <div class="form-group">
-              <label class="control-label text-left col-md-3">Akses ke Database</label>
-              <div class="col-md-3">
+              <label class="control-label text-left col-md-3">Login Akses ke Sistem</label>
+              <div class="col-md-2">
               <input class="form-control" name="user"  type="text" value=""  placeholder="User Anda"/>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-2">
               <input class="form-control" name="passw"  type="password" value="" placeholder="Password Anda"/>
               </div>
+              <label class="control-label text-left col-md-3">[informasikan user & password ini ke ybs]</label>
           </div>
           <div class="form-group">
               <label class="control-label text-left col-md-3">Aktif ?</label>

@@ -20,6 +20,9 @@ elseif ($mod=='newpengurus'){
 elseif ($mod=='ubahpengurus'){
 	include "admin/ubah_pengurus.php";
 }
+elseif ($mod=='setuser'){
+	include "admin/setup_user.php";
+}
 elseif ($mod=='formsurat'){
 	include "admin/formatsurat.php";
 }
@@ -119,7 +122,10 @@ elseif ($mod=='ubahtrans'){
 elseif ($mod=='laporan'){
 	include "keuangan/lap_dana.php";
 }
-else {
-    include "";
+elseif ($mod=='home'){
+	include "awal.php";
+}
+else{
+	include "awal.php";
 }
 ?>
