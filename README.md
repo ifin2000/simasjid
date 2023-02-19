@@ -19,3 +19,9 @@ Fitur-fitur :
 15. Laporan Keuangan Masjid/Yayasan
 
 ![dashboard](https://user-images.githubusercontent.com/7757976/219941741-71044684-57b6-47c9-865d-cb15d5f54354.png)
+
+CATATAN :
+khusus utk setup WA Blast, karena menggunakan nodejs ada hal yg perlu diperhatikan,
+1. folder di nodejs-wa-blast, sengaja diletakkan di dalam folder www agar bila pakai server hosting tetap bisa diakses
+2. perlu install modul-modul nodejs sesuai yg ada di package.json
+3. isikan IP address server di tabel setup_wablast agar dikenali oleh aplikasi
