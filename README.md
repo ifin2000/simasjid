@@ -16,3 +16,5 @@ fitur-fitur :
 12. pengiriman pesan via WhatsApp blast
 13. entry data pemasukan/pengeluaran dana
 14. laporan keuangan yayasan
+
+![image](https://user-images.githubusercontent.com/7757976/219940541-8b5eff26-89da-420b-88f1-bfa1daed08ef.png)
