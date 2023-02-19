@@ -54,7 +54,7 @@ function tanggal_indo($tanggal, $cetak_hari = false){
 				'Kamis',
 				'Jumat',
 				'Sabtu',
-				'Minggu'
+				'Ahad'
 			);			
 	$bulan = array (1 => 'Januari',
 				'Februari',

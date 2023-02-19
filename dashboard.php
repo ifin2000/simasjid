@@ -37,7 +37,7 @@ if (isset($_SESSION["sesi"])){
                 <!-- START X-NAVIGATION -->
                 <ul class="x-navigation">
                     <li class="xn-logo">
-                        <a href="index.html">YMAMMS</a>
+                        <a href="index.html">SIMASJID</a>
                         <a href="#" class="x-navigation-control"></a>
                     </li>
                     <li class="xn-profile">

@@ -19,7 +19,8 @@
         <div class="login-container">
         
             <div class="login-box animated fadeInDown">
-                <div class="logo"><img src="incl/img/logo_panel_small.png"></img></div>
+                <div class="logo"><img src="incl/img/logo_depan.png"></img></div>
+                <!--<div class="logo"><img src="incl/img/logo_panel_small.png"></img></div>-->
                 <div class="">&nbsp;</div>
                 <div class="login-body">
                     <div class="login-title"><strong>Log In</strong> ke account Anda</div>
@@ -50,7 +51,7 @@
                 </div>
                 <div class="login-footer">
                     <div class="pull-left">
-                        &copy; 2023 YMAMMS
+                        &copy; 2023 softanesia.com
                     </div>
                     <!--<div class="pull-right">
                         <a href="#">Tentang Kami</a> |
