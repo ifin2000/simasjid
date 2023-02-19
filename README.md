@@ -16,3 +16,5 @@ fitur-fitur :
 12. pengiriman pesan via WhatsApp blast
 13. entry data pemasukan/pengeluaran dana
 14. laporan keuangan yayasan
+
+selama ini berjalan baik saat dijalankan pada Ubuntu 20.06, PHP-7.2, MySQL, Apache dan NodeJS (utk WA Blast)

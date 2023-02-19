@@ -2,7 +2,7 @@
 //ini_set('display_errors', 1);
 //ini_set('display_startup_errors', 1);
 //error_reporting(E_ALL);
-$folder_photo = "../../tv-masjid/assets/images/khusus";
+$folder_photo = "../incl/assets/images/ustadz";
 $kode=$_POST['kode'];
 $nama = $_POST['nama'];
 $alamat = $_POST['alamat'];
