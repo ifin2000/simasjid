@@ -1,12 +1,12 @@
 # yayasan
-aplikasi webbased utk pengelolaan yayasan masjid
+aplikasi webbased utk pengelolaan yayasan/masjid
 
 fitur-fitur :
-1. data nama, alamat yayasan
-2. data pengurus yayasan
-3. setup format surta dan buat templat surat
+1. data nama, alamat yayasan/masjid
+2. data pengurus yayasan/masjid
+3. setup format surat dan buat template surat
 4. data jamaah masjid
-5. pengelolaan dokumen-dokumen yayasan
+5. pengelolaan dokumen-dokumen yayasan/masjid
 6. pembuatan surat-surat keluar
 7. membuat notulen rapat pengurus
 8. jadwal imam sholat wajib
