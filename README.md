@@ -19,6 +19,11 @@ Fitur-fitur :
 14. Pencatatan Keluar/Masuk Dana Masjid/Yayasan
 15. Laporan Keuangan Masjid/Yayasan
 
+demo (untuk mencoba fitur2nya) :
+https://softanesia.com/simasjid
+user : admin
+pass : 123456
+
 ![dashboard](https://user-images.githubusercontent.com/7757976/219941741-71044684-57b6-47c9-865d-cb15d5f54354.png)
 
 CATATAN :
