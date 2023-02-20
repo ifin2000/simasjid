@@ -1,5 +1,6 @@
 # yayasan
 aplikasi webbased utk pengelolaan yayasan masjid
+(tampilan responsif sehingga tetap bisa diakses lewat layar HP utk entry data-data)
 
 Fitur-fitur :
 1. Data Nama & Alamat Masjid/Yayasan
@@ -24,4 +25,6 @@ CATATAN :
 khusus utk setup WA Blast, karena menggunakan nodejs ada hal yg perlu diperhatikan,
 1. folder di nodejs-wa-blast, sengaja diletakkan di dalam folder www agar bila pakai server hosting tetap bisa diakses
 2. perlu install modul-modul nodejs sesuai yg ada di package.json
-3. isikan IP address server di tabel setup_wablast agar dikenali oleh aplikasi
+3. isikan IP address server di tabel setup_wablast agar dikenali oleh aplikasi (misal : http://12.34.56.78:8081)
+
+sumber info penggunaan WhatsApp blast dgn nodejs bisa dipelajari di https://www.youtube.com/watch?v=xF0Z6Te2yO8
