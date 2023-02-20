@@ -36,7 +36,7 @@
                 <select name="pilgam" id="pilgam" class="form-control select">
                     <option value="kosong">--Tidak Pakai Gambar--</option>
                     <?php
-                        $dir = "../yayasan/admin/img_pesan/";
+                        $dir = "../simasjid/admin/img_pesan/";
                         if (is_dir($dir)){
                           if ($dh = opendir($dir)){
                             while (($file = readdir($dh)) !== false){
@@ -81,28 +81,6 @@
                 <label class="check"><input type="checkbox" name="pengurus"
                         value="1" />&nbsp;&nbsp; Khusus Pengurus *</label>
             </div>
-        </div>
-        <div class="form-group col-md-9">
-        <label class="control-label text-left col-md-3"></label>
-        <div class="col-md-2">
-            <label class="check"><input type="checkbox" name="kat_null"
-                        value="1" />&nbsp;&nbsp; Data WA Tanpa Nama*</label>
-            </div>
-            <div class="col-md-2">
-                <select class="form-control select" name="sel_null" id="sel_null">
-                    <option value="1">RT 01</option>
-                    <option value="2">RT 02</option>
-                    <option value="3">RT 03</option>
-                    <option value="4">RT 04</option>
-                    <option value="5">RT 05</option>
-                    <option value="6">RT 06</option>
-                    <option value="7">RT 07</option>
-                    <option value="24">RT 24</option>
-                    <option value="25">RT 25</option>
-                    <option value="-">Lain-lain</option>
-                </select>
-            </div>
-        <hr>
         </div>
         <div class="form-group col-md-9">
         <label class="control-label text-left col-md-3"></label>
