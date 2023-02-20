@@ -5,9 +5,9 @@ SET time_zone = '+00:00';
 SET foreign_key_checks = 0;
 SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
 
-DROP DATABASE IF EXISTS `db_yayasan`;
-CREATE DATABASE `db_yayasan` /*!40100 DEFAULT CHARACTER SET latin1 COLLATE latin1_general_ci */;
-USE `db_yayasan`;
+DROP DATABASE IF EXISTS `db_simasjid`;
+CREATE DATABASE `db_simasjid` /*!40100 DEFAULT CHARACTER SET latin1 COLLATE latin1_general_ci */;
+USE `db_simasjid`;
 
 DROP TABLE IF EXISTS `data_aktivis`;
 CREATE TABLE `data_aktivis` (
