@@ -17,7 +17,7 @@ if (isset($_SESSION["sesi"])){
 <html lang="en">
     <head>        
         <!-- META SECTION -->
-        <title>:: Yayasan Masjid Al Madinatul Munawwaroh Situsari ::</title>
+        <title>:: Sistem Informasi Manajemen Masjid [SIMASJID] ::</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />    
