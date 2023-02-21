@@ -26,7 +26,7 @@ function notyConfirm(kode){
         buttons: [
             {addClass: 'btn btn-success btn-clean', text: 'Ok', onClick: function($noty) {
                 $noty.close();
-                window.location.href="tvmasjid/del_khotib.php?id="+kode;
+                window.location.href="dakwah/del_khotib.php?id="+kode;
             }
             },
             {addClass: 'btn btn-danger btn-clean', text: 'Cancel', onClick: function($noty) {
@@ -45,5 +45,5 @@ function buka(kode){
 }
 function del() {
     var kode = document.getElementById('ide').value;
-    window.location.href="tvmasjid/del_khotib.php?id="+kode;
+    window.location.href="dakwah/del_khotib.php?id="+kode;
 }

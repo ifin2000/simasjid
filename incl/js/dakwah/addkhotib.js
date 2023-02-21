@@ -1,7 +1,7 @@
 $(function() {  
     $("#nama").autocomplete({
       minLength:2 ,
-        source: 'tvmasjid/suggest_nama.php?var=ustadz',
+        source: 'dakwah/suggest_nama.php?var=ustadz',
         open: function(event, ui) {
             
             var autocomplete = $(".ui-autocomplete:visible");
@@ -16,7 +16,7 @@ $(function() {
 $(function() {  
     $("#bilal").autocomplete({
       minLength:2 ,
-        source: 'tvmasjid/suggest_nama.php?var=muadzin',
+        source: 'dakwah/suggest_nama.php?var=muadzin',
         open: function(event, ui) {
             
             var autocomplete = $(".ui-autocomplete:visible");
@@ -31,7 +31,7 @@ $(function() {
 $(function() {  
     $("#muadzin").autocomplete({
       minLength:2 ,
-        source: 'tvmasjid/suggest_nama.php?var=muadzin',
+        source: 'dakwah/suggest_nama.php?var=muadzin',
         open: function(event, ui) {
             
             var autocomplete = $(".ui-autocomplete:visible");

@@ -25,5 +25,5 @@ function buka(kode){
 }
 function del() {
     var kode = document.getElementById('ide').value;
-    window.location.href="tvmasjid/del_ustadz.php?id="+kode;
+    window.location.href="dakwah/del_ustadz.php?id="+kode;
 }
