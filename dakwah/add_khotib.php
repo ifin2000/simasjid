@@ -1,7 +1,7 @@
 
 
         <div class="page-content-wrap form-horizontal">
-        <form action="tvmasjid/new_khotib.php" method="post" name="trans">
+        <form action="dakwah/new_khotib.php" method="post" name="trans">
 
         <div class="panel panel-info">
         			<div class="panel-heading">
@@ -55,5 +55,5 @@
 <script type="text/javascript" src="incl/js/plugins/jquery/jquery.min.js"></script>
 <script type="text/javascript" src="incl/js/plugins/jquery/jquery-ui.min.js"></script>
 
-<script type="text/javascript" src="incl/js/tvmasjid/addkhotib.js"></script>
+<script type="text/javascript" src="incl/js/dakwah/addkhotib.js"></script>
          

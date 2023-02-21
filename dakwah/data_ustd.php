@@ -66,4 +66,4 @@
     
     <script type="text/javascript" src="incl/js/plugins/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="incl/js/plugins/jquery/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="incl/js/tvmasjid/datustadz.js"></script>
+    <script type="text/javascript" src="incl/js/dakwah/datustadz.js"></script>

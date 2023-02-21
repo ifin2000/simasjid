@@ -87,31 +87,31 @@ elseif ($mod=='waauto'){
 	include "wablast/autosend.php";
 }
 elseif ($mod=='addustadz'){
-	include "tvmasjid/add_ustd.php";
+	include "dakwah/add_ustd.php";
 }
 elseif ($mod=='ubahustadz'){
-	include "tvmasjid/ubah_ustd.php";
+	include "dakwah/ubah_ustd.php";
 }
 elseif ($mod=='dataustd'){
-	include "tvmasjid/data_ustd.php";
+	include "dakwah/data_ustd.php";
 }
 elseif ($mod=='jdwjumat'){
-	include "tvmasjid/jdw_jumat.php";
+	include "dakwah/jdw_jumat.php";
 }
 elseif ($mod=='addkhotib'){
-	include "tvmasjid/add_khotib.php";
+	include "dakwah/add_khotib.php";
 }
 elseif ($mod=='jdwimam'){
-	include "tvmasjid/jdw_imam.php";
+	include "dakwah/jdw_imam.php";
 }
 elseif ($mod=='ubahjdwimam'){
-	include "tvmasjid/ubah_jdwimam.php";
+	include "dakwah/ubah_jdwimam.php";
 }
 elseif ($mod=='kajianahad'){
-	include "tvmasjid/kajian_ahad.php";
+	include "dakwah/kajian_ahad.php";
 }
 elseif ($mod=='ubahkajahad'){
-	include "tvmasjid/ubah_kajahad.php";
+	include "dakwah/ubah_kajahad.php";
 }
 elseif ($mod=='entrydana'){
 	include "keuangan/inoutdana.php";

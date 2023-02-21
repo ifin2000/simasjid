@@ -7,7 +7,7 @@
 ?>
 
         <div class="page-content-wrap form-horizontal">
-        <form action="tvmasjid/upd_jdwimam.php" method="post" name="trans">
+        <form action="dakwah/upd_jdwimam.php" method="post" name="trans">
 
         <div class="panel panel-info">
         			<div class="panel-heading">

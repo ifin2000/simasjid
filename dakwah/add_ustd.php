@@ -1,7 +1,7 @@
 
 
         <div class="page-content-wrap form-horizontal">
-        <form action="tvmasjid/new_ustadz.php" method="post" name="trans" enctype="multipart/form-data">
+        <form action="dakwah/new_ustadz.php" method="post" name="trans" enctype="multipart/form-data">
 
         <div class="panel panel-info">
         			<div class="panel-heading">

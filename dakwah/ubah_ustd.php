@@ -8,7 +8,7 @@
 ?>
 
         <div class="page-content-wrap form-horizontal">
-        <form action="tvmasjid/upd_ustadz.php" method="post" name="trans" enctype="multipart/form-data">
+        <form action="dakwah/upd_ustadz.php" method="post" name="trans" enctype="multipart/form-data">
 
         <div class="panel panel-info">
         			<div class="panel-heading">
