@@ -2,6 +2,12 @@
 aplikasi webbased utk pengelolaan masjid / yayasan
 (tampilan responsif sehingga tetap bisa diakses lewat layar HP utk entry data-data)
 
+spesifikasi yg diperlukan (minimal) :
+- PHP 7.2
+- MySQL 8.0.18
+- Apache 2
+- NodeJS (khusus WA Blast)
+
 Fitur-fitur :
 1. Data Nama & Alamat Masjid/Yayasan
 2. Data Pengurus Masjid/Yayasan
