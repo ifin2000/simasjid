@@ -6,7 +6,7 @@ spesifikasi yg diperlukan (minimal) :
 - PHP 7.2
 - MySQL 8.0.18
 - Apache 2
-- NodeJS (khusus WA Blast)
+- NodeJS v.14 (khusus WA Blast)
 
 Fitur-fitur :
 1. Data Nama & Alamat Masjid/Yayasan
