@@ -181,10 +181,6 @@ if (isset($_SESSION["sesi"])){
 
         <script type="text/javascript" src="incl/js/plugins/jquery/jquery.min.js"></script>
         <script type="text/javascript" src="incl/js/plugins/jquery/jquery-ui.min.js"></script>
-        <script type="text/javascript" src="incl/jquery/jquery-1.11.1.min.js"></script>
-        <script type="text/javascript" src="incl/jquery/jquery-ui-1.11.1.js"></script>
-        <script type="text/javascript" src="incl/jquery/jquery.idletimer.js"></script>
-        <script type="text/javascript" src="incl/jquery/jquery.idletimeout.js"></script>
         <script type="text/javascript" src="incl/js/plugins/bootstrap/bootstrap.min.js"></script>
 
         <script type="text/javascript" src="incl/js/plugins.js"></script>        
