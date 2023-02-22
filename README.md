@@ -4,8 +4,8 @@ aplikasi webbased utk pengelolaan masjid / yayasan
 
 spesifikasi yg diperlukan (minimal) :
 - PHP 7.2
-- MySQL 8.0.18
-- Apache 2
+- MySQL / PostgreSQL / MariaDB
+- Apache 2.0
 - NodeJS v.14 (khusus WA Blast)
 
 Fitur-fitur :
