@@ -162,7 +162,7 @@
     function kodesurat(){
         var jenis = $('#jenis').val();
         $.ajax({
-            url: '../yayasan/admin/cekkdsrt.php',
+            url: '../simasjid/admin/cekkdsrt.php',
             type: 'post',
             data: {
                 "jenis": jenis
@@ -179,7 +179,7 @@
     function kodejabatan(){
         var jenis = $('#jabat').val();
         $.ajax({
-            url: '../yayasan/admin/cekkdjbt.php',
+            url: '../simasjid/admin/cekkdjbt.php',
             type: 'post',
             data: {
                 "jenis": jenis
