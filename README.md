@@ -24,16 +24,18 @@ Fitur-fitur :
 13. Pengiriman Pesan via WhatsApp sesuai target
 14. Pencatatan Keluar/Masuk Dana Masjid/Yayasan
 15. Laporan Keuangan Masjid/Yayasan
+16. Jadwal Sholat 5 waktu di dashboard
 
 demo (untuk mencoba fitur2nya) :
 https://softanesia.com/simasjid
 user : admin
-pass : 123456
+pass : 123456 (mohon jangan ubah password agar yg lain bisa akses)
 
 ![dashboard](https://user-images.githubusercontent.com/7757976/219941741-71044684-57b6-47c9-865d-cb15d5f54354.png)
 
 CATATAN :
-khusus utk setup WA Blast, karena menggunakan nodejs ada hal yg perlu diperhatikan,
+- Bila diinstal di komputer lokal, maka WA Blast dan Jadwal Sholat tidak akan berfungsi (karena harus online)
+- Untuk WA Blast, karena menggunakan nodejs ada hal yg perlu diperhatikan,
 1. folder di nodejs-wa-blast, sengaja diletakkan di dalam folder www agar bila pakai server hosting tetap bisa diakses
 2. perlu install modul-modul nodejs sesuai yg ada di package.json
 3. isikan IP address server di tabel setup_wablast agar dikenali oleh aplikasi (misal : http://12.34.56.78:8081)
