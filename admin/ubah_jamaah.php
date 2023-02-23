@@ -4,7 +4,7 @@
    $query = "select id,nama_lengkap,alamat,nohp,tgl_lahir,gender,rt,rw from warga_muslim where id='$kode'";
    $result = mysqli_query($db_link,$query);
    $data = mysqli_fetch_array($result);
-   $rtrw = $data['rt']."/".$data['rw'];
+   //$rtrw = $data['rt']."/".$data['rw'];
 ?>
 
         <div class="page-content-wrap form-horizontal">
@@ -59,9 +59,9 @@
             </div>
           </div>
           <div class="form-group">
-            <label class="control-label text-left col-md-3">Warga RT/RW ? </label>
-            <div class="col-md-3">
-                <select class="form-control select" name="rt">
+            <label class="control-label text-left col-md-3">Warga RT ? </label>
+            <div class="col-md-1">
+                <!--<select class="form-control select" name="rt">
                     <option value=<?php pilih($rtrw,""); ?>>[ pilih salah satu ]</option>
                     <option value=<?php pilih($rtrw,"1/10"); ?>>RT01/RW10</option>
                     <option value=<?php pilih($rtrw,"2/10"); ?>>RT02/RW10</option>
@@ -72,7 +72,8 @@
                     <option value=<?php pilih($rtrw,"7/10"); ?>>RT07/RW10</option>
                     <option value=<?php pilih($rtrw,"24/07"); ?>>RT24/RW07</option>
                     <option value=<?php pilih($rtrw,"25/07"); ?>>RT25/RW07</option>
-                </select>
+                </select>-->
+                <input class="form-control" name="rt" type="text" value="<?php echo $data['rt']; ?>"/>
             </div>
           </div>
           <div class="form-group">

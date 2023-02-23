@@ -43,6 +43,12 @@
                     ?>
                 </select>
             </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <a href="#" onclick="inputjnstr()" data-toggle="tooltip" data-placement="left"
+                    title="Input Jenis Transaksi Baru"
+                    class="btn btn-warning col-lg-12 col-xs-12 col-sm-12 col-md-12"
+                    style="float:right;">Tambahkan Jenis Transaksi Baru</a>
+            </div>
           </div>
           <div class="form-group">
             <label class="control-label text-left col-md-3">Keterangan Detil </label>
@@ -125,7 +131,7 @@
                         
                     </div>
                     <div class="modal-body">
-                       <h4><strong>Anda yakin ingin menghapus data ini ? </strong></h4>
+                       <h4><strong>Anda sudah yakin ingin menghapus data ini ? </strong></h4>
                        <p>INGAT ! Data yang dihapus tidak dapat dikembalikan</p>
                        <p>Tekan Tombol "YA" Apabila Anda Yakin</p>
                        <input type="hidden" id="ide" name="ide">
@@ -137,7 +143,92 @@
                 </div>
             </div>
     </div>
+
+    <div class="modal" id="modal_jnstr" tabindex="-1" role="dialog" aria-labelledby="smallModalHead" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content" style="margin-top: 150px;">
+            <div class="modal-header" style="background-color: #2500f9">
+                <button type="button" onclick="bataljnstr()" class="close" data-dismiss="modal"><span
+                        aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="smallModalHead" style="color: #ffffff">Input jnstr</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group col-md-8">
+                    <label class="col-md-2 control-label">Nama</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" name="jnstr_jenis" id="jnstr_jenis" value="">
+                    </div>
+                </div>
+                <div class="form-group col-md-4">
+                    <div class="col-md-12">
+                      <select class="form-control select" name="jnstr_gol" id="jnstr_gol">
+                        <option value="Pemasukan">Pemasukan</option>
+                        <option value="Pengeluaran">Pengeluaran</option>
+                      </select>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="modal-footer" style="background-color: #97c4ff">
+                <input name="button" id="simpanjnstr" onclick="simpanjnstr()" type="submit" value="SIMPAN"
+                    class="btn btn-success pull-right" />
+                <button type="button" onclick="bataljnstr()" class="btn btn-danger pull-left"
+                    data-dismiss="modal">Batal</button>
+            </div>
+        </div>
+    </div>
+</div>
     
-    <script type="text/javascript" src="incl/js/plugins/jquery/jquery.min.js"></script>
-    <script type="text/javascript" src="incl/js/plugins/jquery/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="incl/js/keuangan/datatrans.js"></script>
+<script type="text/javascript" src="incl/js/plugins/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="incl/js/plugins/jquery/jquery-ui.min.js"></script>
+<script type="text/javascript" src="incl/js/keuangan/datatrans.js"></script>
+
+<script type="text/javascript">
+
+  $(document).ready(function() {
+    $('#modal_jnstr').on('hidden.bs.modal', function (e) {
+      bataljnstr();
+    })
+    if (!$("#modal_jnstr").modal("hide")) {
+      alert('close')
+    }		
+  });
+
+  function inputjnstr() {
+    $('#modal_jnstr').modal({ backdrop: "static" });
+  }
+
+  function bataljnstr() {
+    //
+  }
+
+  function simpanjnstr() {
+    //if ($('#jnstr_jenis').val=='') {
+        var nama = $("#jnstr_jenis").val();
+        var jenis = $("#jnstr_gol").val();
+        var data = "nama=" + nama + "&jenis=" + jenis;
+        $.ajax({
+            url: "keuangan/json_isitrs.php",
+            data: data,
+            type: "POST",
+            beforeSend: function () {
+                $("#simpanjnstr").val('Proses Menyimpan...')
+            },
+            success: function (response) {
+              window.location.reload(true);
+                if (response == 'OK') {
+                    $("#simpanjnstr").val('SIMPAN');
+                    $("#modal_jnstr").modal('hide');
+                    $("#simpanjnstr").attr('disabled', true);
+                } else {
+                    $("#simpanjnstr").val('SIMPAN');
+                    alert("Gagal tersimpan");
+                }
+            }
+        })
+    /*} else {
+        $('#modal_jnstr').modal('hide');
+    }*/
+}
+
+</script>

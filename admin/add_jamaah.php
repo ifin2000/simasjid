@@ -52,9 +52,9 @@
             </div>
           </div>
           <div class="form-group">
-            <label class="control-label text-left col-md-3">Warga RT/RW ? </label>
-            <div class="col-md-3">
-                <select class="form-control select" name="rt">
+            <label class="control-label text-left col-md-3">Warga RT ? </label>
+            <div class="col-md-1">
+                <!--<select class="form-control select" name="rt">
                     <option value="">[ pilih salah satu ]</option>
                     <option value="1/10">RT01/RW10</option>
                     <option value="2/10">RT02/RW10</option>
@@ -65,8 +65,10 @@
                     <option value="7/10">RT07/RW10</option>
                     <option value="24/07">RT24/RW07</option>
                     <option value="25/07">RT25/RW07</option>
-                </select>
+                </select>-->
+                <input class="form-control" name="rt" type="text"/>
             </div>
+            <label class="control-label text-left col-md-3">*hanya pakai angka - 2 digit (misal 02,09,27,dsb)</label>
           </div>
           <div class="form-group">
             <label class="control-label col-md-3"></label>

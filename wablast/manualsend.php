@@ -90,7 +90,7 @@
             </div>
             <div class="col-md-3">
                 <select class="form-control select" name="sel_rt" id="sel_rt">
-                    <option value="1">RT 01</option>
+                    <!--<option value="1">RT 01</option>
                     <option value="2">RT 02</option>
                     <option value="3">RT 03</option>
                     <option value="4">RT 04</option>
@@ -98,7 +98,14 @@
                     <option value="6">RT 06</option>
                     <option value="7">RT 07</option>
                     <option value="24">RT 24</option>
-                    <option value="25">RT 25</option>
+                    <option value="25">RT 25</option>-->
+                    <option value="">[ pilih salah satu ]</option>
+                    <?php
+                        $resolt = mysqli_query($db_link,"select rt from warga_muslim group by rt order by rt");
+                        while ($dato = mysqli_fetch_array($resolt)){
+                          echo "<option value='".$dato['rt']."'>".$dato['rt']."</option>";
+                        }    
+                    ?>
                     <option value="-">Lain-lain</option>
                 </select>
             </div>
