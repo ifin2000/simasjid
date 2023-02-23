@@ -51,12 +51,6 @@
                 </select>
             </div>
         </div>
-        <!--<div class="form-group" style="margin-top: -10px;">
-            <div class="col-md-3"></div>
-            <div class="col-md-9" style="text-align: right;">
-                <small id="myWordCount" class="">1000 character left</small>
-            </div>
-        </div>-->
         <div class="form-group col-md-9">
             <label class="control-label text-left col-md-3">Tanggal Pengiriman</label>
             <div class="col-md-4">
@@ -90,15 +84,6 @@
             </div>
             <div class="col-md-3">
                 <select class="form-control select" name="sel_rt" id="sel_rt">
-                    <!--<option value="1">RT 01</option>
-                    <option value="2">RT 02</option>
-                    <option value="3">RT 03</option>
-                    <option value="4">RT 04</option>
-                    <option value="5">RT 05</option>
-                    <option value="6">RT 06</option>
-                    <option value="7">RT 07</option>
-                    <option value="24">RT 24</option>
-                    <option value="25">RT 25</option>-->
                     <option value="">[ pilih salah satu ]</option>
                     <?php
                         $resolt = mysqli_query($db_link,"select rt from warga_muslim group by rt order by rt");
@@ -157,7 +142,7 @@ function uplimg(){
     var form = $('#formupl')[0]; // You need to use standard javascript object here
     var formData = new FormData(form);
     $.ajax({
-        url: '../yayasan/admin/uplimg.php',
+        url: '../simasjid/admin/uplimg.php',
         type: 'post',
         data: formData,
         contentType: false,
