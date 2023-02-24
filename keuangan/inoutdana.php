@@ -47,7 +47,7 @@
                 <a href="#" onclick="inputjnstr()" data-toggle="tooltip" data-placement="left"
                     title="Input Jenis Transaksi Baru"
                     class="btn btn-warning col-lg-12 col-xs-12 col-sm-12 col-md-12"
-                    style="float:right;">Tambahkan Jenis Transaksi Baru</a>
+                    style="float:right;">Bila belum ada di daftar, tambahkan disini!</a>
             </div>
           </div>
           <div class="form-group">
