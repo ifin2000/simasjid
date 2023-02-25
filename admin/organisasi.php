@@ -41,8 +41,28 @@
           <div class="form-group">
               <label class="control-label text-left col-md-3">Kota</label>
               <div class="col-md-3">
-                  <input type="text" class="form-control" name="kota" value="<?php echo $data['kota']; ?>"/>
+                  <!--<input type="text" class="form-control" name="kota" value="<?php echo $data['kota']; ?>"/>-->
+                  <select class="form-control select" name="kota" id="kota">
+                    <option value="">[ pilih salah satu ]</option>
+                    <?php
+                      $url = 'https://api.myquran.com/v1/sholat/kota/semua';     // 1204: kode kab.bogor -> sumber API https://documenter.getpostman.com/view/841292/Tz5p7yHS#intro
+                      $ch = curl_init($url);
+                      curl_setopt($ch, CURLOPT_HTTPGET, true);
+                      curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                      $response = curl_exec($ch);
+                      curl_close($ch);
+                      $hasil = json_decode($response, true);
+                      for($a=0; $a < count($hasil); $a++)
+                      {
+                        $isi = $hasil[$a]['id'];
+                        $iso = $hasil[$a]['lokasi'];
+                        $gab = $hasil[$a]['id']." # ".$hasil[$a]['lokasi'];
+                        echo "<option value=".pilih($data["id"]." # ".$data["kota"],$gab).">".$iso."</option>";
+                      }
+                    ?>
+                  </select>
               </div>
+              <label class="control-label text-left col-md-3">*untuk mengambil jadwal sholat harian secara realtime</label>
           </div>
           <div class="form-group">
             <label class="control-label text-left col-md-3">No.Telpon/WA </label>
@@ -62,4 +82,11 @@
           
     </form>
     </div>
-       
+
+<?php
+function pilih($var,$isi){
+    if ($var==$isi){ $isi="'".$isi."' selected"; }
+    else { $isi="'".$isi."'"; }
+    return $isi;
+}
+?>

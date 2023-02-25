@@ -1,12 +1,17 @@
 <?php
 session_start();
 $login = $_SESSION['nama'];
+// akses database
+include ('incl/koneksi.php');
+$queri    = "select id from organisasi";
+$miner = mysqli_query($db_link,$queri);
+$raws  = mysqli_fetch_array($miner);
 // GET FROM API
 date_default_timezone_set('Asia/Jakarta');
 $thn = date('Y');
 $bln = date('m');
 $tgl = date('d');
-$url = 'https://api.myquran.com/v1/sholat/jadwal/1204/'.$thn.'/'.$bln.'/'.$tgl;     // 1204: kode kab.bogor -> sumber API https://documenter.getpostman.com/view/841292/Tz5p7yHS#intro
+$url = 'https://api.myquran.com/v1/sholat/jadwal/'.$raws["id"].'/'.$thn.'/'.$bln.'/'.$tgl;     // $raws['id']: kode kota/kab -> sumber API https://documenter.getpostman.com/view/841292/Tz5p7yHS#intro
 $ch = curl_init($url);
 curl_setopt($ch, CURLOPT_HTTPGET, true);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -20,7 +25,6 @@ $ashar = $response['data']['jadwal']['ashar'];
 $maghrib = $response['data']['jadwal']['maghrib'];
 $isya = $response['data']['jadwal']['isya'];
 // ambil database
-include ('incl/koneksi.php');
 $now = date("Y-m-d");
 $ago = date('Y-m-d',strtotime('-31 days',strtotime($now))) . PHP_EOL;
 // PENGAMBILAN DATA DARI DATABASE UNTUK Pemasukan
