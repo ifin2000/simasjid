@@ -24,7 +24,9 @@ Fitur-fitur :
 13. Pengiriman Pesan via WhatsApp sesuai target
 14. Pencatatan Keluar/Masuk Dana Masjid/Yayasan
 15. Laporan Keuangan Masjid/Yayasan
-16. Jadwal Sholat 5 waktu di dashboard
+16. Jadwal Sholat 5 waktu di dashboard (setup Kota di no.1 diatas)
+
+API utk jadwal sholat diambil dari https://api.myquran.com/
 
 demo (untuk mencoba fitur2nya) :
 https://softanesia.com/simasjid
