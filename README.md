@@ -2,13 +2,13 @@
 aplikasi webbased utk pengelolaan masjid / yayasan
 (tampilan responsif sehingga tetap bisa diakses lewat layar HP utk entry data-data)
 
-spesifikasi yg diperlukan (minimal) :
+**SPESIFIKASI MINIMAL :**
 - PHP 7.2
 - MySQL / PostgreSQL / MariaDB
 - Apache 2.0
 - NodeJS v.14 (khusus WA Blast)
 
-Fitur-fitur :
+**FITUR-FITUR :**
 1. Data Nama & Alamat Masjid/Yayasan
 2. Data Pengurus Masjid/Yayasan
 3. Data Jamaah Masjid
@@ -26,21 +26,21 @@ Fitur-fitur :
 15. Laporan Keuangan Masjid/Yayasan
 16. Jadwal Sholat 5 waktu di dashboard (setup Kota di no.1 diatas)
 
-demo (untuk mencoba fitur2nya) :
+**DEMO** (untuk mencoba fitur2nya) :
 https://softanesia.com/simasjid
 
-user : admin
-pass : 123456 
-(mohon jangan ubah password agar yg lain bisa akses)
+user : admin  
+pass : 123456  
+(mohon jangan ubah password agar yg lain bisa akses) 
 
-Bila ingin diinstall di komputer/laptop lokal (offline), silahkan download di : 
-https://softanesia.com/simasjid/dl/simasjid-v1.0.zip
-(didalamnya sudah include Apache, PHP, MySQL dan setupnya)
-tinggal ekstrak, lalu buka browser, ketikkan 127.0.0.1/simasjid
+Bila ingin diinstall di komputer/laptop lokal (offline), silahkan download di :   
+https://softanesia.com/simasjid/dl/simasjid-v1.0.zip  
+(didalamnya sudah include Apache, PHP, MySQL dan setupnya)  
+tinggal ekstrak, lalu buka browser, ketikkan 127.0.0.1/simasjid  
 
 ![dashboard](https://user-images.githubusercontent.com/7757976/219941741-71044684-57b6-47c9-865d-cb15d5f54354.png)
 
-CATATAN :
+**CATATAN** :
 - API utk jadwal sholat diambil dari https://api.myquran.com/
 - Bila diinstal di komputer lokal, maka WA Blast dan Jadwal Sholat tidak akan berfungsi (karena harus online)
 - Untuk WA Blast, karena menggunakan nodejs ada hal yg perlu diperhatikan,
