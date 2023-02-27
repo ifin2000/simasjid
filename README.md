@@ -35,8 +35,8 @@ pass : 123456
 
 Bila ingin diinstall di komputer/laptop lokal (offline), silahkan download di :   
 https://softanesia.com/simasjid/dl/simasjid-v1.0.zip  
-(didalamnya sudah include Apache, PHP, MySQL dan setupnya)  
-tinggal ekstrak, lalu buka browser, ketikkan 127.0.0.1/simasjid  
+(didalamnya sudah include Laragon yg sudah terisi Apache, PHP, MySQL dan setupnya)  
+tinggal ekstrak, klik 2x simasjid.exe, jalankan Apache & MySQL lewat menu Laragon, lalu buka browser, ketikkan 127.0.0.1/simasjid  
 
 ![dashboard](https://user-images.githubusercontent.com/7757976/219941741-71044684-57b6-47c9-865d-cb15d5f54354.png)
 
