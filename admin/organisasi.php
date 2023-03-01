@@ -1,7 +1,7 @@
 <?php
    $kode=$_GET['kode'];
    include ('../incl/koneksi.php');
-   $query = "select id,kode,nama,alamat,kota,telp from organisasi";
+   $query = "select id,kode,nama,alamat,kota,telp,bank,norek,anrek from organisasi";
    $result = mysqli_query($db_link,$query);
    $data = mysqli_fetch_array($result);
 ?>
