@@ -67,7 +67,7 @@
           <div class="form-group">
             <label class="control-label text-left col-md-3">No.Telpon/WA </label>
             <div class="col-md-3">
-              <input class="form-control" name="telp"  type="text" value="<?php echo $data['telp']; ?>" /></textarea>
+              <input class="form-control" name="telp"  type="text" value="<?php echo $data['telp']; ?>" />
             </div>
           </div>
           <div class="form-group">
