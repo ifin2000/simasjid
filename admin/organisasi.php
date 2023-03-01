@@ -71,6 +71,27 @@
             </div>
           </div>
           <div class="form-group">
+            <label class="control-label text-left col-md-3">Rekening (Nama Bank) </label>
+            <div class="col-md-3">
+              <input class="form-control" name="bank"  type="text" value="<?php echo $data['bank']; ?>" />
+            </div>
+            <label class="control-label text-left col-md-3">*untuk ditampilkan di monitor TV Masjid</label>
+          </div>
+          <div class="form-group">
+            <label class="control-label text-left col-md-3">Rekening (No.A/C) </label>
+            <div class="col-md-3">
+              <input class="form-control" name="norek"  type="text" value="<?php echo $data['norek']; ?>" />
+            </div>
+            <label class="control-label text-left col-md-3">*untuk ditampilkan di monitor TV Masjid</label>
+          </div>
+          <div class="form-group">
+            <label class="control-label text-left col-md-3">Rekening (Atas Nama) </label>
+            <div class="col-md-3">
+              <input class="form-control" name="anrek"  type="text" value="<?php echo $data['anrek']; ?>" />
+            </div>
+            <label class="control-label text-left col-md-3">*untuk ditampilkan di monitor TV Masjid</label>
+         </div>
+          <div class="form-group">
             <label class="control-label col-md-3"></label>
             <div class="col-md-9">
                 <input type="hidden" value="<?php echo $data['id']; ?>" name="kode">
