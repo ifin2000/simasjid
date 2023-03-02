@@ -1,5 +1,5 @@
 # SIMASJID
-aplikasi webbased utk pengelolaan masjid / yayasan
+aplikasi webbased utk pengelolaan masjid / yayasan  
 (tampilan responsif sehingga tetap bisa diakses lewat layar HP utk entry data-data)
 
 **SPESIFIKASI MINIMAL :**
