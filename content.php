@@ -44,6 +44,9 @@ elseif ($mod=='datajamaah'){
 elseif ($mod=='ubahjamaah'){
 	include "admin/ubah_jamaah.php";
 }
+elseif ($mod=='setuptv'){
+	include "admin/setuptv.php";
+}
 elseif ($mod=='usedokumen'){
 	include "arsip/datadokumen.php";
 }

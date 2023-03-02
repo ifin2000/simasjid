@@ -65,6 +65,7 @@ if (isset($_SESSION["sesi"])){
                             <?php if(in_array('13', $akses)){ ?><li><a href="?pages=formsurat"><span class="fa fa-edit"></span> Format Surat</a></li><?php } ?>
                             <?php if(in_array('14', $akses)){ ?><li><a href="?pages=setwablast"><span class="fa fa-bullhorn"></span> WhatsApp Blast</a></li><?php } ?>
                             <?php if(in_array('15', $akses)){ ?><li><a href="?pages=datajamaah"><span class="fa fa-users"></span> Data Jamaah</a></li><?php } ?>
+                            <?php if(in_array('16', $akses)){ ?><li><a href="?pages=setuptv"><span class="fa fa-desktop"></span> Setup Tampilan TV</a></li><?php } ?>
                         </ul>
                     </li>
                     <li class="xn-openable">
@@ -77,7 +78,7 @@ if (isset($_SESSION["sesi"])){
                         </ul>
                     </li>
                     <li class="xn-openable">
-                        <a href="#"><span class="fa fa-desktop"></span> <span class="xn-text">Dakwah Rutin</span></a>
+                        <a href="#"><span class="fa fa-microphone"></span> <span class="xn-text">Dakwah Rutin</span></a>
                         <ul>
                             <?php if(in_array('31', $akses)){ ?><li><a href="?pages=jdwimam"><span class="fa fa-bookmark"></span> Jadwal Imam</a></li><?php } ?>
                             <?php if(in_array('32', $akses)){ ?><li><a href="?pages=dataustd"><span class="fa fa-male"></span> Data Ustadz/Khotib</a></li><?php } ?>
@@ -188,6 +189,7 @@ if (isset($_SESSION["sesi"])){
 
         <!-- THIS PAGE PLUGINS -->
         <script type="text/javascript" src="incl/js/plugins/bootstrap/bootstrap-datepicker.js"></script>
+        <script type="text/javascript" src="incl/js/plugins/bootstrap/bootstrap-timepicker.min.js"></script>
         <script type="text/javascript" src="incl/js/plugins/datatables/jquery.dataTables.min.js"></script>
         <script type="text/javascript" src="incl/js/demo_tables.js"></script>
         <script type='text/javascript' src='incl/js/plugins/noty/jquery.noty.js'></script>

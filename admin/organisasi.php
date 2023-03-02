@@ -1,7 +1,7 @@
 <?php
    $kode=$_GET['kode'];
    include ('../incl/koneksi.php');
-   $query = "select id,kode,nama,alamat,kota,telp from organisasi";
+   $query = "select id,kode,nama,alamat,kota,telp,bank,norek,anrek from organisasi";
    $result = mysqli_query($db_link,$query);
    $data = mysqli_fetch_array($result);
 ?>
@@ -39,7 +39,7 @@
             </div>
           </div>
           <div class="form-group">
-              <label class="control-label text-left col-md-3">Kota</label>
+          <label class="control-label text-left col-md-3">Kota</label>
               <div class="col-md-3">
                   <!--<input type="text" class="form-control" name="kota" value="<?php echo $data['kota']; ?>"/>-->
                   <select class="form-control select" name="kota" id="kota">
@@ -67,8 +67,29 @@
           <div class="form-group">
             <label class="control-label text-left col-md-3">No.Telpon/WA </label>
             <div class="col-md-3">
-              <input class="form-control" name="telp"  type="text" value="<?php echo $data['telp']; ?>" /></textarea>
+              <input class="form-control" name="telp"  type="text" value="<?php echo $data['telp']; ?>" />
             </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label text-left col-md-3">Rekening (Nama Bank) </label>
+            <div class="col-md-3">
+              <input class="form-control" name="bank"  type="text" value="<?php echo $data['bank']; ?>" />
+            </div>
+            <label class="control-label text-left col-md-3">*untuk ditampilkan di monitor TV Masjid</label>
+          </div>
+          <div class="form-group">
+            <label class="control-label text-left col-md-3">Rekening (No.A/C) </label>
+            <div class="col-md-3">
+              <input class="form-control" name="norek"  type="text" value="<?php echo $data['norek']; ?>" />
+            </div>
+            <label class="control-label text-left col-md-3">*untuk ditampilkan di monitor TV Masjid</label>
+          </div>
+          <div class="form-group">
+            <label class="control-label text-left col-md-3">Rekening (Atas Nama) </label>
+            <div class="col-md-3">
+              <input class="form-control" name="anrek"  type="text" value="<?php echo $data['anrek']; ?>" />
+            </div>
+            <label class="control-label text-left col-md-3">*untuk ditampilkan di monitor TV Masjid</label>
           </div>
           <div class="form-group">
             <label class="control-label col-md-3"></label>
