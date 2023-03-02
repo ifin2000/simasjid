@@ -241,7 +241,7 @@ CREATE TABLE `notulen_rapat` (
 
 DROP TABLE IF EXISTS `organisasi`;
 CREATE TABLE `organisasi` (
-  `id` tinyint(1) NOT NULL,
+  `id` varchar(6) COLLATE latin1_general_ci NOT NULL,
   `kode` varchar(10) COLLATE latin1_general_ci NOT NULL,
   `nama` varchar(100) COLLATE latin1_general_ci NOT NULL,
   `alamat` varchar(255) COLLATE latin1_general_ci NOT NULL,
