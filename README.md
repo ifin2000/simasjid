@@ -27,9 +27,8 @@ aplikasi webbased utk pengelolaan masjid / yayasan
 16. Jadwal Sholat 5 waktu di dashboard (setup Kota di no.1 diatas)
 17. Setting Tampilan TV Masjid --> https://github.com/ifin2000/tv-masjid
 
-**DEMO** (untuk mencoba fitur2nya) :
-https://softanesia.com/simasjid
-
+**DEMO** (untuk mencoba fitur2nya) :  
+https://softanesia.com/simasjid  
 user : admin  
 pass : 123456  
 (mohon jangan ubah password agar yg lain bisa akses) 
