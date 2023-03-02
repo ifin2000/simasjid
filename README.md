@@ -9,7 +9,7 @@ aplikasi webbased utk pengelolaan masjid / yayasan
 - NodeJS v.14 (khusus WA Blast)
 
 **FITUR-FITUR :**
-1. Data Nama & Alamat Masjid/Yayasan
+1. Data Nama, Alamat, No.Rekening Masjid/Yayasan
 2. Data Pengurus Masjid/Yayasan
 3. Data Jamaah Masjid
 4. Format & Template Surat Keluar
