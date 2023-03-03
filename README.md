@@ -44,8 +44,7 @@ tinggal ekstrak, klik 2x simasjid.exe, jalankan Apache & MySQL lewat menu Larago
 - API utk jadwal sholat diambil dari https://api.myquran.com/
 - Bila diinstal di komputer lokal, maka WA Blast dan Jadwal Sholat tidak akan berfungsi (karena harus online)
 - Untuk WA Blast, karena menggunakan nodejs ada hal yg perlu diperhatikan,
-1. folder di nodejs-wa-blast, sengaja diletakkan di dalam folder www agar bila pakai server hosting tetap bisa diakses
-2. perlu install modul-modul nodejs sesuai yg ada di package.json
-3. isikan IP address server di tabel setup_wablast agar dikenali oleh aplikasi (misal : http://12.34.56.78:8081)
+1. folder di nodejs-wa-blast, sengaja diletakkan di dalam folder www agar bila pakai server hosting tetap bisa diakses  
+2. perlu install modul-modul nodejs sesuai yg ada di package.json  
+3. isikan IP address dan port server di tabel setup_wablast agar dikenali oleh aplikasi (misal : http://12.34.56.78:8081)  
 
-sumber info penggunaan WhatsApp blast dgn nodejs bisa dipelajari di https://www.youtube.com/watch?v=xF0Z6Te2yO8
