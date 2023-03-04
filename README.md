@@ -48,9 +48,9 @@ https://softanesia.com/simasjid/dl/simasjid-v1.0.zip
 B. SERVER-HOSTING :  
 - Download source-code dan upload ke server-hosting (atau langsung clone https://github.com/ifin2000/simasjid.git)
 - Letakkan di folder web-root di server-hosting Anda
-- Buka panel phpMyAdmin dan silahkan login dgn user/password yg disediakn server-hosting
-- Import file database dgn meng-eksekusi file simasjid.sql
-- Buka http://[ip-server-hosting]/simash=jid
+- Buka panel phpMyAdmin dan silahkan login dgn user/password yg disediakan server-hosting
+- Import file database dgn meng-eksekusi file 'simasjid.sql'
+- Buka http://[ip-server-hosting-anda]/simasjid (misal http://12.34.56.78/simasjid)
 - Silahkan login dengan user: admin, password: 123456
 
 C. VPS/CLOUD :
@@ -63,5 +63,5 @@ C. VPS/CLOUD :
 1. folder di nodejs-wa-blast, sengaja diletakkan di dalam folder www agar bila pakai server hosting tetap bisa diakses  
 2. perlu install modul-modul nodejs sesuai yg ada di package.json (run 'npm install'  di folder tsb)
 3. isikan IP address (dan port 8081) di tabel setup_wablast agar dikenali oleh aplikasi (misal : http://12.34.56.78:8081)  
-4. karena ada fitur pengiriman pesan massal (via WA) secara terjadwal, maka Anda perlu install CRONJOB di server Anda  
+4. karena ada fitur pengiriman pesan massal (via WA) secara terjadwal, maka Anda perlu install CRONJOB di server Anda (seting waktu sesuaikan dgn kebutuhan, misal per 5 menit eksekusi file pengiriman)
 
