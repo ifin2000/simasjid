@@ -35,7 +35,7 @@ pass : 123456
 ![dashboard](https://user-images.githubusercontent.com/7757976/219941741-71044684-57b6-47c9-865d-cb15d5f54354.png)
 
 **CARA INSTALASI :**  
-A. OFFLINE / LOCAL COMPUTER :  
+A. OFFLINE / LOCAL COMPUTER (di Windows) :  
 Bila ingin diinstall di komputer/laptop lokal (offline), silahkan download di :   
 https://softanesia.com/simasjid/dl/simasjid-v1.0.zip  
 (didalamnya sudah include Laragon yg sudah terisi Apache, PHP, MySQL dan setupnya)  
@@ -63,5 +63,5 @@ C. VPS/CLOUD :
 1. folder di nodejs-wa-blast, sengaja diletakkan di dalam folder www agar bila pakai server hosting tetap bisa diakses  
 2. perlu install modul-modul nodejs sesuai yg ada di package.json (run 'npm install'  di folder tsb)
 3. isikan IP address (dan port 8081) di tabel setup_wablast agar dikenali oleh aplikasi (misal : http://12.34.56.78:8081)  
-4. karena ada fitur pengiriman pesan massal (via WA) secara terjadwal, maka Anda perlu install CRONJOB di server Anda (seting waktu sesuaikan dgn kebutuhan, misal per 5 menit eksekusi file pengiriman)
+4. karena ada fitur pengiriman pesan massal (via WA) secara terjadwal, maka Anda perlu install CRONJOB di server Anda (seting waktu sesuaikan dgn kebutuhan, misal per 5 menit cek tabel wa_kirim apakah ada jadwal pengiriman pesan)
 
