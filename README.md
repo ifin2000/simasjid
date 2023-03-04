@@ -26,24 +26,42 @@ aplikasi webbased utk pengelolaan masjid / yayasan
 16. Jadwal Sholat 5 waktu di dashboard (setup Kota di no.1 diatas)
 17. Setting Tampilan TV Masjid --> https://github.com/ifin2000/tv-masjid
 
-**DEMO** (untuk mencoba fitur2nya) :  
+**DEMO :** (untuk mencoba fitur2nya) :  
 https://softanesia.com/simasjid  
 user : admin  
 pass : 123456  
-(mohon jangan ubah password agar yg lain bisa akses) 
+(mohon jangan ubah password agar yg lain bisa akses)  
 
+![dashboard](https://user-images.githubusercontent.com/7757976/219941741-71044684-57b6-47c9-865d-cb15d5f54354.png)
+
+**CARA INSTALASI :**  
+A. OFFLINE / LOCAL COMPUTER :  
 Bila ingin diinstall di komputer/laptop lokal (offline), silahkan download di :   
 https://softanesia.com/simasjid/dl/simasjid-v1.0.zip  
 (didalamnya sudah include Laragon yg sudah terisi Apache, PHP, MySQL dan setupnya)  
-tinggal ekstrak, klik 2x simasjid.exe, jalankan Apache & MySQL lewat menu Laragon, lalu buka browser, ketikkan 127.0.0.1/simasjid  
+- Ekstrak file zip di folder C:
+- Buka folder C:/laragon, klik 2x simasjid.exe
+- Jalankan (Start) Apache & MySQL lewat menu Laragon
+- Buka browser, ketikkan 127.0.0.1/simasjid, tekan enter
+- Silahkan login dengan user: admin, password: 123456  
 
-![dashboard](https://user-images.githubusercontent.com/7757976/219941741-71044684-57b6-47c9-865d-cb15d5f54354.png)
+B. SERVER-HOSTING :  
+- Download source-code dan upload ke server-hosting (atau langsung clone https://github.com/ifin2000/simasjid.git)
+- Letakkan di folder web-root di server-hosting Anda
+- Buka panel phpMyAdmin dan silahkan login dgn user/password yg disediakn server-hosting
+- Import file database dgn meng-eksekusi file simasjid.sql
+- Buka http://[ip-server-hosting]/simash=jid
+- Silahkan login dengan user: admin, password: 123456
+
+C. VPS/CLOUD :
+- Tidak perlu dijelaskan detil, karena pasti yg sudah punya VPS sudah paham cara install 😁
 
 **CATATAN** :
 - API utk jadwal sholat diambil dari https://api.myquran.com/
 - Bila diinstal di komputer lokal, maka WA Blast dan Jadwal Sholat tidak akan berfungsi (karena harus online)
 - Untuk WA Blast, karena menggunakan nodejs ada hal yg perlu diperhatikan,
 1. folder di nodejs-wa-blast, sengaja diletakkan di dalam folder www agar bila pakai server hosting tetap bisa diakses  
-2. perlu install modul-modul nodejs sesuai yg ada di package.json  
-3. isikan IP address dan port server di tabel setup_wablast agar dikenali oleh aplikasi (misal : http://12.34.56.78:8081)  
+2. perlu install modul-modul nodejs sesuai yg ada di package.json (run 'npm install'  di folder tsb)
+3. isikan IP address (dan port 8081) di tabel setup_wablast agar dikenali oleh aplikasi (misal : http://12.34.56.78:8081)  
+4. karena ada fitur pengiriman pesan massal (via WA) secara terjadwal, maka Anda perlu install CRONJOB di server Anda  
 
