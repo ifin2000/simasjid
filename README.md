@@ -59,9 +59,11 @@ C. VPS/CLOUD :
 **CATATAN** :
 - API utk jadwal sholat diambil dari https://api.myquran.com/
 - Bila diinstal di komputer lokal, maka WA Blast dan Jadwal Sholat tidak akan berfungsi (karena harus online)
-- Untuk WA Blast, karena menggunakan nodejs ada hal yg perlu diperhatikan,
-1. folder di nodejs-wa-blast, sengaja diletakkan di dalam folder www agar bila pakai server hosting tetap bisa diakses  
-2. perlu install modul-modul nodejs sesuai yg ada di package.json (run 'npm install'  di folder tsb)
-3. isikan IP address (dan port 8081) di tabel setup_wablast agar dikenali oleh aplikasi (misal : http://12.34.56.78:8081)  
-4. karena ada fitur pengiriman pesan massal (via WA) secara terjadwal, maka Anda perlu install CRONJOB di server Anda (seting waktu sesuaikan dgn kebutuhan, misal per 5 menit cek tabel wa_kirim apakah ada jadwal pengiriman pesan)
+- Untuk WA Blast, karena menggunakan nodejs ada hal yg perlu diperhatikan:  
+1. Folder di nodejs-wa-blast, sengaja diletakkan di dalam folder www agar bila pakai server hosting tetap bisa diakses  
+2. Perlu install modul-modul nodejs sesuai yg ada di package.json (run 'npm install' lewat command-line di folder tsb)
+3. Isikan IP address (dan port 8081) di tabel setup_wablast agar dikenali oleh aplikasi (misal : http://12.34.56.78:8081)  
+4. Jalankan nodejs (run 'node index.js' di folder diatas) - agar bisa running 24 jam gunakan modul forever.js atau nodemon.js
+5. Untuk memastikan WA Blast berjalan baik, gunakan fitur testing kirim pesan di menu Setting Umum -> WhatsApp Blast, isikan di Panel Uji Coba Kirim
+6. Karena ada fitur pengiriman pesan massal via WA secara terjadwal, maka Anda perlu install CRONJOB di server Anda (seting waktu sesuaikan dgn kebutuhan, misal per 5 menit cek tabel wa_kirim apakah ada jadwal pengiriman pesan)
 
