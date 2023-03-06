@@ -54,7 +54,7 @@ B. SERVER-HOSTING :
 - Silahkan login dengan user: admin, password: 123456
 
 C. VPS/CLOUD :
-- Tidak perlu dijelaskan detil, karena pasti yg sudah punya VPS sudah paham cara install 😁
+- Tidak perlu dijelaskan, karena pasti yg sudah punya VPS sudah paham cara install 😁
 
 **CATATAN** :
 - API utk jadwal sholat diambil dari https://api.myquran.com/
@@ -67,3 +67,9 @@ C. VPS/CLOUD :
 5. Untuk memastikan WA Blast berjalan baik, gunakan fitur testing kirim pesan di menu Setting Umum -> WhatsApp Blast, isikan di Panel Uji Coba Kirim
 6. Karena ada fitur pengiriman pesan massal via WA secara terjadwal, maka Anda perlu install CRONJOB di server Anda (seting waktu sesuaikan dgn kebutuhan, misal per 5 menit cek tabel wa_kirim apakah ada jadwal pengiriman pesan)
 
+**PERLU PERBAIKAN :**
+- enkripsi password masih menggunakan md5, ganti dengan sha  
+- menu import data jamaah masjid lewat file excel (karena lebih mudah dan cepat daripada harus 1-1 entry data yg sangat banyak)  
+- validasi password menggunakan javacript / jquery (misal minimal 8 karakter, tidak boleh ada spasi, dsb..)  
+- notifikasi pesan error atau berhasil (lupa belum dibuat :D)  
+- dll (maklum krn dipakai sendiri jd tidak terlalu kepikiran)  
