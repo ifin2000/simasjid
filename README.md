@@ -73,3 +73,9 @@ C. VPS/CLOUD :
 - validasi password menggunakan javacript / jquery (misal minimal 8 karakter, tidak boleh ada spasi, dsb..)  
 - notifikasi pesan error atau berhasil (lupa belum dibuat :D)  
 - dll (maklum krn dipakai sendiri jd tidak terlalu kepikiran)  
+
+**LISENSI**
+
+MIT License
+
+Copyright (c) 2023 Muchammad Syamsul Arifin
