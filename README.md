@@ -76,6 +76,6 @@ C. VPS/CLOUD :
 
 **LISENSI**
 
-MIT License
+[MIT License](https://github.com/ifin2000/simasjid/blob/master/LICENSE)
 
 Copyright (c) 2023 Muchammad Syamsul Arifin
