@@ -44,6 +44,7 @@ https://softanesia.com/simasjid/dl/simasjid-v1.0.zip
 - Jalankan (Start) Apache & MySQL lewat menu Laragon
 - Buka browser, ketikkan 127.0.0.1/simasjid, tekan enter
 - Silahkan login dengan user: admin, password: 123456  
+*Catatan Tambahan :* Anda bisa meng-online-kan aplikasi di komputer Anda dengan memanfaatkan NGROK (https://ngrok.com/download)
 
 B. SERVER-HOSTING :  
 - Download source-code dan upload ke server-hosting (atau langsung clone https://github.com/ifin2000/simasjid.git)
