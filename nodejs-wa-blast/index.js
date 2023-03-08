@@ -58,7 +58,7 @@ const connectToWhatsApp = async () => {
     sock = makeWASocket( {
          printQRInTerminal: true,
          auth: state,
-         browser: ["support_pasby", "Chrome", "1.0"],
+         browser: ["simasjid", "Chrome", "1.0"],
      });
     
     sock.ev.on('connection.update', async(update) => {
