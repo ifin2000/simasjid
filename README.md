@@ -68,6 +68,8 @@ C. VPS/CLOUD :
 5. Untuk memastikan WA Blast berjalan baik, gunakan fitur testing kirim pesan di menu Setting Umum -> WhatsApp Blast, isikan di Panel Uji Coba Kirim
 6. Karena ada fitur pengiriman pesan massal via WA secara terjadwal, maka Anda perlu install CRONJOB di server Anda (seting waktu sesuaikan dgn kebutuhan, misal per 5 menit cek tabel wa_kirim apakah ada jadwal pengiriman pesan)
 
+link sumber untuk modul WhatsApp API (versi Baileys) : https://github.com/adiwajshing/Baileys
+
 **PERLU PERBAIKAN :**
 - enkripsi password masih menggunakan md5, ganti dengan sha  
 - menu import data jamaah masjid lewat file excel (karena lebih mudah dan cepat daripada harus 1-1 entry data yg sangat banyak)  
@@ -79,4 +81,3 @@ C. VPS/CLOUD :
 
 [MIT License](https://github.com/ifin2000/simasjid/blob/master/LICENSE)
 
-Copyright (c) 2023 Muchammad Syamsul Arifin
